@@ -1,5 +1,5 @@
-<?php 
+<?php
 
-Route::get('x', function(){
-    dd('ini frontend');
-});
+use App\Http\Controllers\frontend\HomeController;
+
+Route::get('/', [HomeController::class, 'index']);
